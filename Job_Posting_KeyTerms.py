@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+#Resume_Scanner_Python
+#Read Job Description Text File and Clean Duplicates
+
 import csv
 from itertools import chain
 
