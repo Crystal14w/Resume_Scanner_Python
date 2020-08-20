@@ -40,6 +40,7 @@ Packages to install on Jupyter Notebook
 !pip install pandas
 !pip install matplotlib
 !pip install python-csv
+!pip install more-itertools
 ```
 
 ## Data Cleanse
