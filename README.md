@@ -3,15 +3,8 @@ Python script that matches your resume to the job description and other industry
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+First create a text file that has the job description such as languages and tools.
+Upload resume and text file to Jupyter Notebook. Install the python packages before running script.
 
 ### Installation
 You can find the installation documentation for the
@@ -36,6 +29,18 @@ Launch with:
 
 You need some configuration before starting Jupyter notebook remotely. See [Running a notebook server](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html).
 End with an example of getting some data out of the system or using it for a little demo
+
+### Packages
+
+Packages to install on Jupyter Notebook
+
+```
+!pip install PyPDF2
+!pip install textract
+!pip install pandas
+!pip install matplotlib
+!pip install python-csv
+```
 
 ## Data Cleanse
 
