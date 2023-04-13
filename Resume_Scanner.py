@@ -3,7 +3,7 @@
 #Resume Scanner
 
 # Import required libraries
-import PyPDF2
+from PyPDF2 import PdfReader
 import textract
 import re
 import string
@@ -11,13 +11,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Open pdf file
-pdfFileObj = open('/Users/.../Resume_2020.pdf','rb')
+pdfFileObj = open('/Users/.../Resume_2023.pdf','rb')
 
 # Read file
-pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+pdfReader = PdfReader(pdfFileObj)
 
 # Get total number of pages
-num_pages = pdfReader.numPages
+num_pages = len(pdfReader.pages)
 
 # Initialize a count for the number of pages
 count = 0
@@ -27,9 +27,9 @@ text = ""
 
 # Extract text from every page on the file
 while count < num_pages:
-    pageObj = pdfReader.getPage(count)
+    pageObj = pdfReader.pages[count]
     count +=1
-    text += pageObj.extractText()
+    text += pageObj.extract_text()
 
 #View Text and Page Count
 print("The number of pages:",count)
