@@ -35,7 +35,7 @@ End with an example of getting some data out of the system or using it for a lit
 Packages to install on Jupyter Notebook
 
 ```
-!pip install PyPDF2
+!pip install --upgrade PyPDF2
 !pip install textract
 !pip install pandas
 !pip install matplotlib
